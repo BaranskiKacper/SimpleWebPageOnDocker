@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="web application"/>
+        <meta name="keywords" content="Real Estates"/>
+        <meta name="author" content="Kacper Barański"/>
+        <title>Real Estates</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <script src="../script.js" defer="defer"></script>
+        <script type="module" src="type_view.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Real Estates</h1>
+            </header>
+
+            <nav class="navigation-bar">
+                <ul>
+                    <li><a href="../index.html">main</a></li>
+                    <li><a href="../type_list/type_list.html">types</a></li>
+                    <li><a href="../file_list/file_list.html">files</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2 id="type">type</h2></header>
+                    <section>
+                        <h3>Details</h3>
+                        <div class="details-grid">
+                            <label for="size">Size:</label><span id="size">size</span>
+                            <label for="numberOfRooms">Number of rooms:</label><span id="numberOfRooms">numberOfRooms</span>
+                            <label for="internet_access">Internet access:</label><span id="internet_access">internet_access</span>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Real Estates</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>name</th>
+                                    <th>view</th>
+                                    <th>edit</th>
+                                    <th>delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <tr>
+                                    <td>id</td>
+                                    <td>name</td>
+                                    <td><a href="#">view</a></td>
+                                    <td><a href="#">edit</a></td>
+                                    <td>
+                                        <button class="ui-button ui-control">delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div id="newReal_estate"></div>
+
+                    </section>
+                </article>
+            </section>
+
+            <footer class="footer">
+                <p>Copyright &copy; 2023, Kacper Barański</p>
+            </footer>
+        </div>
+    </body>
+</html>

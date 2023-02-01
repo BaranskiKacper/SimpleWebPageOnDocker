@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Real Estates web application"/>
+  <meta name="keywords" content="Real Estates"/>
+  <meta name="author" content="Kacper Barański"/>
+  <title>Real Estates</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <script src="../script.js" defer="defer"></script>
+  <script type="module" src="real_estate_view.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>Real Estates</h1>
+  </header>
+
+  <nav class="navigation-bar">
+    <ul>
+      <li><a href="../index.html">main</a></li>
+      <li><a href="../type_list/type_list.html">types</a></li>
+      <li><a href="../file_list/file_list.html">files</a></li>
+    </ul>
+  </nav>
+
+  <section class="main-section">
+    <article class="text--justified">
+      <header><h2 id="real_estate">real_estate</h2></header>
+      <section>
+        <h3>Details</h3>
+        <div>
+          <label for="id">ID: </label><span id="id">id</span><br>
+          <label for="name">Name: </label><span id="name">name</span><br>
+          <label for="city">City: </label><span id="city">city</span><br>
+          <label for="age">Age: </label><span id="age">age</span><br>
+          <label for="type">Type: </label><span id="type">type</span>
+        </div>
+      </section>
+    </article>
+  </section>
+
+  <footer class="footer">
+    <p>Copyright &copy; 2023, Kacper Barański</p>
+  </footer>
+</div>
+</body>
+</html>

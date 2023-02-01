@@ -1,0 +1,50 @@
+GET http://localhost:8080/api/types/flat/real_estates/4
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/api/types/flat/real_estates/4
+
+###
+
+
+DELETE localhost:8080/api/types/boat
+
+###
+POST http://localhost:8080/api/types
+Content-Type: application/json
+
+{
+  "name": "plane",
+  "numberOfRooms": 8,
+  "size": 20,
+  "internet_access": "TRUE"
+}
+###
+POST http://localhost:8080/api/types/house/real_estates
+Content-Type: application/json
+
+{
+  "name":"domek_lesny",
+  "city":"elblag",
+   "age": 2
+
+}
+###
+GET http://localhost:8080/api/real_estates
+Accept: application/json
+
+###
+GET http://localhost:8080/api/types
+###
+
+PUT localhost:8080/api/types/house
+Content-Type: application/json
+
+{
+  "numberOfRooms": 1,
+  "size": 6,
+  "internet_access": "FALSE"
+}
+
+###

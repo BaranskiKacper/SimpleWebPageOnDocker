@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Real Estates web application"/>
+  <meta name="keywords" content="Real Estates"/>
+  <meta name="author" content="Kacper Barański"/>
+  <title>Real Estates</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <script src="../script.js" defer="defer"></script>
+  <script type="module" src="type_edit.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>Real Estates</h1>
+  </header>
+
+  <nav class="navigation-bar">
+    <ul>
+      <li><a href="../index.html">main</a></li>
+      <li><a href="../type_list/type_list.html">types</a></li>
+      <li><a href="../file_list/file_list.html">files</a></li>
+    </ul>
+  </nav>
+
+  <section class="main-section">
+    <article class="text--justified">
+      <header><h2>Edit type info</h2></header>
+      <form id="infoForm">
+
+        <label for="name">Type name:</label>
+        <input class="ui-control ui-input" id="name" name="name" disabled/><br>
+
+        <label for="size">Size:</label>
+        <input class="ui-control ui-input" id="size" name="size" type="number"/><br>
+
+        <label for="numberOfRooms">Number of rooms:</label>
+        <input class="ui-control ui-input" id="numberOfRooms" name="numberOfRooms" type="number"/><br>
+
+        <label for="internet_access">Internet access:</label>
+        <input class="ui-control ui-input" id="internet_access" name="internet_access"  /><br>
+
+        <input class="ui-control ui-button" type="submit" name="Update" value="Update"/>
+      </form>
+    </article>
+  </section>
+
+  <footer class="footer">
+    <p>Copyright &copy; 2023, Kacper Barański</p>
+  </footer>
+</div>
+</body>
+</html>

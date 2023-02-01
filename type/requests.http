@@ -1,0 +1,36 @@
+
+
+DELETE localhost:8080/api/types/boat
+
+###
+POST http://localhost:8080/api/types
+Content-Type: application/json
+
+{
+  "name": "plane",
+  "numberOfRooms": 8,
+  "size": 20,
+  "internet_access": "TRUE"
+}
+
+###
+GET http://localhost:8080/api/types/house
+Accept: application/json
+
+###
+GET http://localhost:8080/api/types
+Accept: application/json
+
+###
+
+PUT localhost:8080/api/types/house
+Content-Type: application/json
+
+{
+  "numberOfRooms": 1,
+  "size": 6,
+  "internet_access": "FALSE"
+}
+
+###
+

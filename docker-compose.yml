@@ -1,0 +1,63 @@
+version: '3.9'
+
+services:
+  realestate:
+    container_name: realestate
+    build: ./realestate
+    networks:
+      - my_network
+      
+  type:
+    container_name: type
+    build: ./type
+    networks:
+      - my_network
+      
+  gateway:
+    container_name: gateway
+    build: ./gateway
+    networks:
+      - my_network
+      
+  frontend:
+    container_name: frontend
+    build: ./frontend
+    networks:
+      - my_network
+      
+  proxy:
+    container_name: proxy
+    build: ./proxy
+    ports:
+      - "80:80"
+    networks:
+      - my_network
+      
+  filedb:
+    image: mariadb
+    environment:
+      - MARIADB_ROOT_PASSWORD=adminadmin
+      - MARIADB_DATABASE=file
+    networks:
+      - my_network
+    ports:
+     - 3306:3306
+      
+  file:
+    container_name: file
+    build: ./file
+    volumes:
+      - C:/Users/kacpe/Desktop/lab5/file/srcmain/resources/files:/files
+    ports:
+      - "9300:8084"
+    networks:
+      - my_network
+    depends_on:
+      - filedb 
+      
+
+  
+
+networks:
+  my_network:
+    driver: bridge

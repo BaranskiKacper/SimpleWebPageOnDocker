@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="web application"/>
+  <meta name="keywords" content="Real Estates"/>
+  <meta name="author" content="Kacper Barański"/>
+  <title>Real Estates</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <script src="../script.js" defer="defer"></script>
+  <script type="module" src="file_list.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>Real Estates</h1>
+  </header>
+
+  <nav class="navigation-bar">
+    <ul>
+      <li><a href="../index.html">main</a></li>
+      <li><a href="../type_list/type_list.html">types</a></li>
+      <li><a href="file_list.html">files</a></li>
+    </ul>
+  </nav>
+
+  <section class="main-section">
+    <article class="text--justified">
+      <header><h2>Files</h2></header>
+      <table class="data-table">
+        <thead>
+        <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>author</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody">
+        <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>author</th>
+        </tr>
+        </tbody>
+      </table> <br>
+      <a href="../file_create/file_create.html">Create a new file</a>
+
+    </article>
+  </section>
+
+  <footer class="footer">
+    <p>Copyright &copy; 2023, Kacper Barański</p>
+  </footer>
+</div>
+</body>
+</html>

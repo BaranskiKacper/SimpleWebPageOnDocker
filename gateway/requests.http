@@ -1,0 +1,48 @@
+
+GET localhost:8080/api/real_estates
+
+###
+
+DELETE localhost:8080/api/types/flat
+
+###
+
+GET localhost:8080/api/types
+
+###
+
+POST http://localhost:8080/api/types
+Content-Type: application/json
+
+{
+  "name": "plane",
+  "numberOfRooms": 10,
+  "size": 20,
+  "internet_access": "TRUE"
+}
+
+###
+
+POST http://localhost:8080/api/real_estates
+Content-Type: application/json
+
+{
+  "name": "abc",
+  "city": "kubalowo",
+  "age": 5
+}
+
+###
+GET http://localhost:8080/api/types/house/real_estates/3
+###
+POST http://localhost:8080/api/types/plane/real_estates
+Content-Type: application/json
+
+{
+  "name": "jol",
+  "city": "ka",
+  "age": 5
+}
+###
+
+
